@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(76, 55, 56);
+    color: white;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading{
+    text-decoration: dotted;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5vh;
+}
+
+.calci{
+    display: grid;
+    border: solid rgb(131, 63, 63);
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 5px;
+    border-radius: 40px;
+    box-shadow: 0 0 30px white;
+}
+
+.calciItem, .calciMenu{
+    border: solid rgb(147, 63, 63);
+    border-radius: 500px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(45, 45, 45);
+    font-size: x-large;
+    margin-left: 2px;
+}
+
+#calciItemDisplay{
+    height: 250px;
+    grid-column: 1/5;
+    border-radius: 0px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: xx-large;
+}
+
+.calciMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    border: solid white 2px;
+    margin-bottom: 4px;
+    width: 35%;
+    border-radius: 50px;
+}
+
+#dig{
+    background-color: darkgray;
+}
+
+#orng{
+    background-color: orange;
+}
+
+.calciItem:active, .calciMenu:active, #dig:active{
+    background-color: rgb(192, 192, 192);
+}
+
+#orng:active{
+    background-color: rgb(255, 208, 120);
+}
